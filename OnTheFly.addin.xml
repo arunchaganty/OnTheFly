@@ -1,0 +1,22 @@
+<Addin id="OnTheFlyAddin"
+	namespace="Tomboy"
+	name="OnTheFly"
+	author="Arun Chaganty"
+	description="Automatically re-formats standard wiki patterns"
+	category="Formatting"
+	defaultEnabled="false"
+	version="0.1">
+
+	<Runtime>
+		<Import assembly="OnTheFly.dll" />
+	</Runtime>
+
+	<Dependencies>
+		<Addin id="Tomboy" version="0.10" />
+	</Dependencies>
+
+	<Extension path="/Tomboy/NoteAddins">
+		<NoteAddin type="Tomboy.OnTheFly.OnTheFlyNoteAddin" />
+	</Extension>
+</Addin>
+
